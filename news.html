@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates - American Biosources Inc. | Latest Healthcare Innovations</title>
+    <meta name="description" content="Stay updated with the latest news and developments in biopharmaceutical industry from American Biosources Inc. and global healthcare innovations.">
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/news.css">
+</head>
+ 
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- NavBar Section Start -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo fade-in-up">
+                <a href="./index.html">
+                    <img src="./asserts/logo.png" alt="American Biosources Inc. Logo" loading="lazy">
+                </a>
+                <p class="tagline">"Time to Market Quality Products for unmet Medical Needs"</p>
+            </div>
+
+            <ul class="nav-menu" id="navigation">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="./products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="./service.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="./news.html" class="nav-link active">News</a></li>
+                <li class="nav-item"><a href="./investor.html" class="nav-link">Investors</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Section End -->
+    
+    <!-- News Overview Section Start -->
+    <header class="banner-fullwidth" data-bg="./asserts/images/4.jpeg">
+        <div class="banner-bg-overlay"></div>
+        <div class="banner-text-wrapper">
+            <h1 class="banner-main-heading fade-in-up">News & Updates</h1>
+            <p class="banner-subtitle fade-in-up">Stay informed with the latest healthcare innovations</p>
+        </div>
+    </header>
+    <!-- News Overview Section End -->
+
+    <!-- News Introduction Section Start -->
+    <section class="news-intro">
+        <div class="container">
+            <div class="intro-content fade-in-up">
+                <h2 class="section-title">Latest <span class="gradient-text">Healthcare News</span></h2>
+                <p class="intro-description">
+                    Stay updated with the latest developments in biopharmaceutical research, medical innovations, 
+                    and healthcare technology from around the world. Our curated news selection keeps you informed 
+                    about breakthrough discoveries and industry trends that shape the future of medicine.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- News Introduction Section End -->
+   
+    <!-- News Section Start -->
+    <section class="news-section">
+        <div class="container">
+            <!-- Filter and Search Section -->
+            <div class="news-controls fade-in-up">
+                <div class="search-container">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="newsSearch" placeholder="Search news articles..." aria-label="Search news articles">
+                    </div>
+                </div>
+                <div class="filter-container">
+                    <select id="categoryFilter" aria-label="Filter by category">
+                        <option value="all">All Categories</option>
+                        <option value="medical">Medical Research</option>
+                        <option value="technology">Healthcare Technology</option>
+                        <option value="pharmaceuticals">Pharmaceuticals</option>
+                        <option value="biotechnology">Biotechnology</option>
+                        <option value="diagnostics">Diagnostics</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- News Grid -->
+            <div class="news-grid" id="newsGrid">
+                <article class="news-card slide-in-left" data-category="medical">
+                    <a href="https://www.bbc.com/news/articles/c75r21ww30vo" target="_blank" rel="noopener noreferrer" aria-label="Read full article about British surgeon fraud case">
+                        <div class="news-image">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/0e6a/live/0ca493b0-67b1-11f0-8dbd-f3d32ebd3327.jpg.webp"
+                                alt="Medical professional in surgical setting" loading="lazy">
+                            <div class="news-category">Medical</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">British surgeon who had his legs removed accused of fraud</h3>
+                            <div class="news-meta">
+                                <span class="news-source">BBC News</span>
+                                <span class="news-date">July 23, 2025</span>
+                            </div>
+                            <p class="news-excerpt">Neil Hopper, 49, is also accused of encouraging the commission of grievous bodily harm in a complex medical fraud case.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card slide-in-left" data-category="technology">
+                    <a href="https://gizmodo.com/man-wearing-chain-necklace-in-critical-condition-after-getting-sucked-into-mri-machine-2000631405"
+                        target="_blank" rel="noopener noreferrer" aria-label="Read full article about MRI safety incident">
+                        <div class="news-image">
+                            <img src="https://gizmodo.com/app/uploads/2025/07/mri-machine-1280x853.jpg" 
+                                alt="MRI machine in medical facility" loading="lazy">
+                            <div class="news-category">Technology</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Man Wearing Chain Necklace in Critical Condition After Getting Sucked Into MRI Machine</h3>
+                            <div class="news-meta">
+                                <span class="news-source">Gizmodo</span>
+                                <span class="news-date">July 19, 2025</span>
+                            </div>
+                            <p class="news-excerpt">A serious safety incident highlights the importance of proper MRI protocols and patient preparation procedures.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card slide-in-left" data-category="medical">
+                    <a href="https://www.businessinsider.com/lisbon-longevity-scans-saved-american-500-medical-costs-2025-7"
+                        target="_blank" rel="noopener noreferrer" aria-label="Read full article about medical tourism savings">
+                        <div class="news-image">
+                            <img src="https://i.insider.com/687fc12f85e81483682e7373?width=700&format=jpeg&auto=webp"
+                                alt="Medical scanning equipment in modern clinic" loading="lazy">
+                            <div class="news-category">Medical</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Medical Tourism: American Saves $500 on Diagnostic Scans in Portugal</h3>
+                            <div class="news-meta">
+                                <span class="news-source">Business Insider</span>
+                                <span class="news-date">July 23, 2025</span>
+                            </div>
+                            <p class="news-excerpt">A marathon runner with persistent pain visited a Lisbon longevity clinic for affordable body scans, saving significantly compared to NYC prices.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card slide-in-right" data-category="medical">
+                    <a href="https://www.bbc.com/news/videos/cgerj7qnprno" target="_blank" rel="noopener noreferrer" aria-label="Read full article about Gaza medical crisis">
+                        <div class="news-image">
+                            <img src="https://ichef.bbci.co.uk/news/1024/branded_news/f298/live/7a8c99c0-6c9f-11f0-af20-030418be2ca5.jpg"
+                                alt="Mother holding malnourished infant" loading="lazy">
+                            <div class="news-category">Medical</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Gaza Medical Crisis: Mother Speaks About Malnourished Baby</h3>
+                            <div class="news-meta">
+                                <span class="news-source">BBC News</span>
+                                <span class="news-date">July 29, 2025</span>
+                            </div>
+                            <p class="news-excerpt">Yasmeen Abu Sultan speaks about her two-month old daughter suffering from malnutrition and the urgent need for medical treatment.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card slide-in-right" data-category="technology">
+                    <a href="https://www.theverge.com/health/715102/dangerously-blurry-line-between-wellness-and-medical-tech"
+                        target="_blank" rel="noopener noreferrer" aria-label="Read full article about wellness vs medical tech">
+                        <div class="news-image">
+                            <img src="https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/257818_Whoop_5_AKrales_0109.jpg?quality=90&strip=all&crop=16.666666666667%2C0%2C66.666666666667%2C100&w=1080"
+                                alt="Wearable health technology device" loading="lazy">
+                            <div class="news-category">Technology</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">The Blurry Line Between Wellness and Medical Technology</h3>
+                            <div class="news-meta">
+                                <span class="news-source">The Verge</span>
+                                <span class="news-date">July 29, 2025</span>
+                            </div>
+                            <p class="news-excerpt">Exploring the increasingly complex relationship between consumer wellness devices and regulated medical technology.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card slide-in-right" data-category="biotechnology">
+                    <a href="https://www.wired.com/story/beyond-wellness-editors-letter/" target="_blank" rel="noopener noreferrer" aria-label="Read full article about wellness industry analysis">
+                        <div class="news-image">
+                            <img src="https://media.wired.com/photos/6879b4e29ef800ad6e13a01d/master/w_1920,c_limit/MDMA_Drug-Tonje-Thielsen.jpg"
+                                alt="Wellness and pharmaceutical research imagery" loading="lazy">
+                            <div class="news-category">Biotechnology</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Does Anyone Know What 'Wellness' Means Anymore?</h3>
+                            <div class="news-meta">
+                                <span class="news-source">Wired</span>
+                                <span class="news-date">July 21, 2025</span>
+                            </div>
+                            <p class="news-excerpt">The well-being business is booming, sometimes at the expense of actual health and scientific rigor.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card slide-in-left" data-category="medical">
+                    <a href="https://www.bbc.com/news/articles/cev0n2r0d2yo" target="_blank" rel="noopener noreferrer" aria-label="Read full article about surgeon practice changes">
+                        <div class="news-image">
+                            <img src="https://ichef.bbci.co.uk/news/1024/cpsprodpb/aee9/live/c463b910-5cd3-11f0-8ad1-05b0327a56af.jpg.webp"
+                                alt="NHS hospital surgical department" loading="lazy">
+                            <div class="news-category">Medical</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">Surgeon Dropped by Private Practice Continues at NHS</h3>
+                            <div class="news-meta">
+                                <span class="news-source">BBC News</span>
+                                <span class="news-date">July 11, 2025</span>
+                            </div>
+                            <p class="news-excerpt">Marc Lamah, dropped by a private provider, continues to operate on NHS patients in Brighton, raising questions about medical oversight.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card slide-in-left" data-category="diagnostics">
+                    <a href="https://seths.blog/2025/07/diagnostics/" target="_blank" rel="noopener noreferrer" aria-label="Read full article about diagnostic systems">
+                        <div class="news-image">
+                            <img src="https://seths.blog/wp-content/uploads/2018/06/seth_godin_ogimages_v02_1806137-1.jpg"
+                                alt="Diagnostic systems and healthcare technology" loading="lazy">
+                            <div class="news-category">Diagnostics</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">The Importance of Built-in Diagnostics in Healthcare Systems</h3>
+                            <div class="news-meta">
+                                <span class="news-source">Seth's Blog</span>
+                                <span class="news-date">July 5, 2025</span>
+                            </div>
+                            <p class="news-excerpt">Complex healthcare systems are more resilient when we build in diagnostics for failure from the start, rather than hoping they'll work.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <article class="news-card slide-in-left" data-category="technology">
+                    <a href="https://www.heise.de/news/Arzt-Software-CompuGroup-Medical-gewinnt-Ausschreibung-der-Bundeswehr-10503435.html"
+                        target="_blank" rel="noopener noreferrer" aria-label="Read full article about medical software development">
+                        <div class="news-image">
+                            <img src="https://heise.cloudimg.io/width/1008/q70.png-lossy-70.webp-lossy-70.foil1/_www-heise-de_/imgs/18/4/9/0/5/8/0/0/shutterstock_2498284559-b3233d9113c038ff.jpeg"
+                                alt="Medical software development and digitalization" loading="lazy">
+                            <div class="news-category">Technology</div>
+                        </div>
+                        <div class="news-content">
+                            <h3 class="news-title">CompuGroup Medical Wins Major Military Healthcare Software Contract</h3>
+                            <div class="news-meta">
+                                <span class="news-source">Heise Online</span>
+                                <span class="news-date">July 29, 2025</span>
+                            </div>
+                            <p class="news-excerpt">CompuGroup Medical receives major contract for digitizing military medical services and developing physician software solutions.</p>
+                            <div class="read-more">
+                                <span>Read More</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-container fade-in-up">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <span>Load More Articles</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- News Section End -->
+
+    <!-- Newsletter Subscription Section Start -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content fade-in-up">
+                <div class="newsletter-text">
+                    <h2>Stay Updated with Healthcare News</h2>
+                    <p>Subscribe to our newsletter for the latest updates in biopharmaceutical research and healthcare innovations.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required aria-label="Email address for newsletter">
+                        <button type="submit">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Subscription Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-left fade-in-up">
+                <h2 class="brand">American Biosources Inc.</h2>
+                <p>Leading the future of biopharmaceutical innovation with cutting-edge research and development. 
+                Our commitment to excellence drives us to deliver quality healthcare solutions that improve lives worldwide.
+                </p>
+            </div>
+
+            <div class="footer-middle fade-in-up">
+                <h4>CONTACT US</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 80 Main Street, 5th Floor, West <br> Orange, New Jersey 07052</p>
+                <p><i class="fas fa-envelope"></i> info@ambioinc.com</p>
+                <p><i class="fas fa-phone"></i> +1-610-905-8609</p>
+                <p><i class="fas fa-phone"></i> +1-484-544-2673</p>
+            </div>
+
+            <div class="footer-right fade-in-up">
+                <h4>FOLLOW US</h4>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>© 2018-2025 American BioSources Inc.,USA®. All rights reserved.</p>
+                    </div>
+                    
+                    <div class="footer-bottom-links">
+                        <a href="./privacy-policy.html">Privacy Policy</a>
+                        <a href="./terms-conditions.html">Terms of Use</a>
+                        <a href="https://www.google.com/maps/place/80+S+Main+St+5th+Floor,+City+of+Orange,+NJ+07050,+USA/@40.7687706,-74.2235939,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3ab4a06547393:0xb4b11665ba4e955c!8m2!3d40.7687706!4d-74.2235939?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer">Site Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-copyright">
+            <a href="https://pravishree.com/" target="_blank" rel="noopener noreferrer">
+                <p>Developed by <b>Pravishree</b></p>
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/news.js"></script>
+</body>
+
+</html>

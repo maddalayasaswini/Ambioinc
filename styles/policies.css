@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset and Base Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    font-family: "Playfair Display", serif;
+    font-family: "Roboto", sans-serif;
+    color: #333;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* Root Variables are used from style.css file*/
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+}
+
+/*********** policies Policy Overview Section Starts *************/
+.policies-overview {
+    position: relative;
+    top: var(--relative-top);
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* border: 4px solid rgb(0, 255, 0); */
+}
+
+.policies-overview .hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease, visibility 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.policies-overview .hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.policies-overview .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.policies-overview .hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(27, 54, 93, 0.8) 0%, rgba(12, 123, 192, 0.6) 100%);
+}
+
+.policies-overview .container {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1300px;
+    min-height: 450px;
+}
+
+.policies-overview .section-header {
+    min-height: 450px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.policies-overview .section-header .heading {
+    font-size: 84px;
+    color: #fff;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+.policies-overview .section-header .sub-heading {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.policies-overview .section-header .sub-heading::after {
+    background: none;
+}
+
+.policies-overview .overview-text {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    margin-bottom: 3rem;
+}
+
+.policies-overview .overview-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #222222;
+    margin-bottom: 1.5rem;
+}
+
+@media(max-width: 560px) {
+    .policies-overview {
+        min-height: 500px;
+    }
+}
+
+@media(max-width: 460px) {
+    .policies-overview {
+        min-height: 600px;
+    }
+}
+
+@media(max-width: 420px) {
+    .policies-overview {
+        min-height: 650px;
+    }
+
+    .policies-overview .section-header .heading {
+        font-size: 40px;
+    }
+
+    .policies-overview .section-header .sub-heading {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 350px) {
+    .policies-overview {
+        min-height: 750px;
+    }
+}
+
+/*********** policies Policy Overview Section Ends *************/
+
+/*************** policies Policy Section Starts *************/
+.policies-section {
+    position: relative;
+    top: var(--relative-top);
+    padding: 80px 20px;
+    background: #f9f9f9;
+}
+
+.policies-section .container {
+    max-width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.policies-section .policy-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+.policies-section .policy-content h4 {
+    font-size: 1.4rem;
+    color: var(--primary-color-1);
+    margin: 20px 0 10px;
+}
+
+.policies-section .policy-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #121212;
+    margin-bottom: 15px;
+}
+
+.policies-section .policy-content ul {
+    margin: 10px 0 20px 20px;
+    padding-left: 10px;
+    list-style: none;
+}
+
+.policies-section .policy-content ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #121212;
+}
+
+.policies-section .policy-content ul ul {
+    list-style: circle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .policies-section .policy-content {
+        padding: 25px;
+    }
+
+    .policies-section .policy-content h4 {
+        font-size: 1.25rem;
+    }
+
+    .policies-section .policy-content ul li {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .policies-section {
+        padding: 60px 15px;
+    }
+
+    .policies-section .policy-content {
+        padding: 20px;
+    }
+
+    .policies-section .policy-content h4 {
+        font-size: 1.1rem;
+    }
+
+    .policies-section .policy-content ul li {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .policies-section {
+        padding: 50px 10px;
+    }
+
+    .policies-section .policy-content {
+        padding: 18px;
+    }
+
+    .policies-section .section-title {
+        font-size: 1.8rem;
+    }
+
+    .policies-section .section-title.terms-heading {
+        font-size: 1.7rem;
+    }
+
+    .policies-section .policy-content h4 {
+        font-size: 1rem;
+    }
+
+    .policies-section .policy-content ul li {
+        font-size: 0.9rem;
+    }
+
+}
+
+/*************** policies Policy Section Ends *************/

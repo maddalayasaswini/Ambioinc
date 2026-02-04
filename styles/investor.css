@@ -1,0 +1,479 @@
+/* ===================================
+   INVESTOR PAGE SPECIFIC STYLES
+   Enhanced with modern animations and responsive design
+   =================================== */
+
+/* Banner Subtitle */
+.banner-subtitle {
+    font-size: clamp(var(--text-lg), 2.5vw, var(--text-xl));
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: var(--space-4);
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+/* Investor Overview Section */
+.investor-overview {
+    position: relative;
+    top: var(--relative-top);
+    padding: var(--space-20) 0;
+    background: var(--bg-primary);
+}
+
+.overview-content {
+    display: flex;
+    gap: var(--space-12);
+    align-items: center;
+    margin-top: var(--space-12);
+}
+
+.overview-text {
+    flex: 1;
+}
+
+.overview-text p {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--space-6);
+}
+
+.overview-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.overview-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow-large);
+    transition: transform var(--transition-slow);
+}
+
+.overview-image img:hover {
+    transform: scale(1.02);
+}
+
+/* Financial Highlights Section */
+.financial-highlights {
+    position: relative;
+    top: var(--relative-top);
+    padding: var(--space-20) 0;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #f1f5f9 100%);
+}
+
+.highlights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.highlight-card {
+    background: white;
+    padding: var(--space-8);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--shadow-medium);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.highlight-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color-1), var(--accent-color));
+}
+
+.highlight-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-large);
+}
+
+.highlight-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color-1), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-6);
+    font-size: var(--text-3xl);
+    color: white;
+}
+
+.highlight-value {
+    font-family: var(--font-heading);
+    font-size: var(--text-5xl);
+    font-weight: 700;
+    color: var(--primary-color-1);
+    margin-bottom: var(--space-2);
+    line-height: 1;
+}
+
+.highlight-label {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Reports & Filings Section */
+.reports-section {
+    position: relative;
+    top: var(--relative-top);
+    padding: var(--space-20) 0;
+    background: var(--bg-primary);
+}
+
+.reports-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-8);
+    margin-top: var(--space-12);
+}
+
+.report-card {
+    background: white;
+    padding: var(--space-8);
+    border-radius: 16px;
+    box-shadow: var(--shadow-medium);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.report-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-large);
+}
+
+.report-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color-1), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-6);
+    font-size: var(--text-3xl);
+    color: white;
+}
+
+.report-card h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--primary-color-1);
+    margin-bottom: var(--space-4);
+    letter-spacing: -0.01em;
+}
+
+.report-card p {
+    font-size: var(--text-base);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: var(--space-6);
+}
+
+.report-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-6);
+    font-size: var(--text-base);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--primary-color-1) 0%, var(--accent-color) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.report-download:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-large);
+}
+
+/* FAQ Section */
+.faq-section {
+    position: relative;
+    top: var(--relative-top);
+    padding: var(--space-20) 0;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #f1f5f9 100%);
+}
+
+.faq-accordion {
+    max-width: 800px;
+    margin: var(--space-12) auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-6);
+    cursor: pointer;
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--primary-color-1);
+    background: white;
+    transition: background-color var(--transition-normal);
+}
+
+.faq-question:hover {
+    background: var(--bg-secondary);
+}
+
+.faq-icon {
+    font-size: var(--text-xl);
+    transition: transform var(--transition-normal);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+    padding: 0 var(--space-6);
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+    padding: var(--space-2) var(--space-6) var(--space-6);
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+/* Investor Contact Section */
+.investor-contact-section {
+    position: relative;
+    top: var(--relative-top);
+    padding: var(--space-20) 0;
+    background: var(--bg-primary);
+}
+
+.contact-content {
+    display: flex;
+    gap: var(--space-12);
+    align-items: center;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, #f1f5f9 100%);
+    border-radius: 20px;
+    padding: var(--space-12);
+    box-shadow: var(--shadow-large);
+}
+
+.contact-text {
+    flex: 1;
+}
+
+.contact-text h2 {
+    font-family: var(--font-heading);
+    font-size: var(--text-4xl);
+    font-weight: 600;
+    color: var(--primary-color-1);
+    margin-bottom: var(--space-6);
+    letter-spacing: -0.02em;
+}
+
+.contact-text p {
+    font-size: var(--text-lg);
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--space-8);
+}
+
+.contact-details p {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-4);
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+}
+
+.contact-details a {
+    color: var(--primary-color-1);
+    text-decoration: none;
+    transition: color var(--transition-normal);
+}
+
+.contact-details a:hover {
+    color: var(--primary-color-2);
+}
+
+.contact-form-container {
+    flex: 1;
+    background: white;
+    padding: var(--space-8);
+    border-radius: 16px;
+    box-shadow: var(--shadow-medium);
+}
+
+.contact-form-container h3 {
+    font-family: var(--font-heading);
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    color: var(--primary-color-1);
+    margin-bottom: var(--space-6);
+    text-align: center;
+}
+
+#investorContactForm {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+#investorContactForm .form-group {
+    position: relative;
+}
+
+#investorContactForm input,
+#investorContactForm textarea {
+    width: 100%;
+    padding: var(--space-4) var(--space-5);
+    font-size: var(--text-base);
+    font-family: var(--font-primary);
+    border: 2px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all var(--transition-normal);
+    outline: none;
+}
+
+#investorContactForm input:focus,
+#investorContactForm textarea:focus {
+    border-color: var(--primary-color-1);
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+#investorContactForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#investorContactForm .submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-8);
+    font-size: var(--text-lg);
+    font-family: var(--font-primary);
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--primary-color-1) 0%, var(--accent-color) 100%);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    letter-spacing: -0.01em;
+}
+
+#investorContactForm .submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(30, 58, 138, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+    .overview-content,
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .overview-image {
+        margin-top: var(--space-8);
+    }
+    
+    .highlights-grid,
+    .reports-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-6);
+    }
+}
+
+@media (max-width: 768px) {
+    .investor-overview,
+    .financial-highlights,
+    .reports-section,
+    .faq-section,
+    .investor-contact-section {
+        padding: var(--space-16) 0;
+    }
+    
+    .highlights-grid,
+    .reports-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-6);
+    }
+    
+    .contact-content {
+        padding: var(--space-8);
+    }
+}
+
+@media (max-width: 480px) {
+    .highlight-value {
+        font-size: var(--text-4xl);
+    }
+    
+    .highlight-icon,
+    .report-icon {
+        width: 60px;
+        height: 60px;
+        font-size: var(--text-2xl);
+    }
+    
+    .faq-question {
+        font-size: var(--text-base);
+    }
+    
+    .contact-content {
+        padding: var(--space-6);
+    }
+    
+    .contact-text h2 {
+        font-size: var(--text-3xl);
+    }
+}
+
+/* Footer positioning for investor page */
+.footer {
+    position: relative;
+    top: var(--relative-top);
+}

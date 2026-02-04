@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - American Biosources Inc. | Innovative Biopharmaceutical Solutions</title>
+    <meta name="description" content="Explore American Biosources Inc.'s comprehensive product portfolio including pharmaceuticals, vaccines, biologics, biosimilars, and genomic diagnostics for unmet medical needs.">
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/products.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- NavBar Section Start -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo fade-in-up">
+                <a href="./index.html">
+                    <img src="./asserts/logo.png" alt="American Biosources Inc. Logo" loading="lazy">
+                </a>
+                <p class="tagline">"Time to Market Quality Products for unmet Medical Needs"</p>
+            </div>
+
+            <ul class="nav-menu" id="navigation">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="./products.html" class="nav-link active">Products</a></li>
+                <li class="nav-item"><a href="./service.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="./news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="./investor.html" class="nav-link">Investors</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Section End -->
+    
+    <!-- Products Overview Section Start -->
+    <header class="banner-fullwidth" data-bg="./asserts/images/1.jpg">
+        <div class="banner-bg-overlay"></div>
+        <div class="banner-text-wrapper">
+            <h1 class="banner-main-heading fade-in-up">Our Products</h1>
+            <p class="banner-subtitle fade-in-up">Innovative solutions for unmet medical needs</p>
+        </div>
+    </header>
+    <!-- Products Overview Section End -->
+   
+    <!-- About Products Section Start -->
+    <section class="info-section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Product <span class="gradient-text">Portfolio</span></h2>
+                <p class="section-subtitle">Comprehensive biopharmaceutical solutions designed to improve patient outcomes</p>
+            </div>
+            <div class="intro-content fade-in-up">
+                <p class="section-description">
+                    American Biosources Inc. develops and delivers a comprehensive portfolio of innovative biopharmaceutical products 
+                    designed to address critical unmet medical needs. Our product range spans across multiple therapeutic areas, 
+                    leveraging cutting-edge science and technology to bring life-changing treatments to patients worldwide.
+                </p>
+                <div class="product-stats">
+                    <div class="stat-item slide-in-left">
+                        <div class="stat-number" data-count="50">0</div>
+                        <div class="stat-label">Products in Pipeline</div>
+                    </div>
+                    <div class="stat-item slide-in-left">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Therapeutic Areas</div>
+                    </div>
+                    <div class="stat-item slide-in-left">
+                        <div class="stat-number" data-count="25">0</div>
+                        <div class="stat-label">Countries Served</div>
+                    </div>
+                    <div class="stat-item slide-in-left">
+                        <div class="stat-number" data-count="1000">0</div>
+                        <div class="stat-label">Healthcare Partners</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Products Section End -->
+
+    <!-- Products Section Start -->
+    <section class="products-section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Our <span class="gradient-text">Product Categories</span></h2>
+                <!-- <p class="section-subtitle">Click on any category to explore our innovative solutions</p> -->
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card slide-in-left" data-category="pharmaceuticals">
+                    <div class="product-animation">
+                        <dotlottie-wc class="product-gif" 
+                            src="https://lottie.host/6d0a7b2b-5e18-4310-8fc5-01987e441989/hMf2imQGAU.lottie"
+                            speed="1" autoplay loop aria-hidden="true">
+                        </dotlottie-wc>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3>Pharmaceuticals</h3>
+                        <p>Advanced pharmaceutical formulations targeting critical therapeutic areas</p>
+                        <button class="product-button" aria-label="Learn more about Pharmaceuticals">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card slide-in-left" data-category="vaccines">
+                    <div class="product-animation">
+                        <dotlottie-wc class="product-gif" 
+                            src="https://lottie.host/88777050-b258-4342-a145-14aa3e431b57/RZOYDBNXX8.lottie"
+                            speed="1" autoplay loop aria-hidden="true">
+                        </dotlottie-wc>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-icon">
+                            <i class="fas fa-syringe"></i>
+                        </div>
+                        <h3>Vaccines</h3>
+                        <p>Next-generation vaccines for infectious disease prevention and treatment</p>
+                        <button class="product-button" aria-label="Learn more about Vaccines">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card slide-in-left" data-category="biologics">
+                    <div class="product-animation">
+                        <dotlottie-wc class="product-gif" 
+                            src="https://lottie.host/f725f945-2605-4f24-a528-e9c1b3a407a7/pMtui2PpBN.lottie"
+                            speed="1" autoplay loop aria-hidden="true">
+                        </dotlottie-wc>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-icon">
+                            <i class="fas fa-dna"></i>
+                        </div>
+                        <h3>Biologics</h3>
+                        <p>Innovative biological therapies including monoclonal antibodies and proteins</p>
+                        <button class="product-button" aria-label="Learn more about Biologics">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card slide-in-right" data-category="biosimilars">
+                    <div class="product-animation">
+                        <dotlottie-wc class="product-gif" 
+                            src="https://lottie.host/c30a5454-e3b4-4e63-ba3a-d3c7ff9016d7/Cca6IhIMRm.lottie"
+                            speed="1" autoplay loop aria-hidden="true">
+                        </dotlottie-wc>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h3>Biosimilars</h3>
+                        <p>High-quality biosimilar products providing accessible treatment options</p>
+                        <button class="product-button" aria-label="Learn more about Biosimilars">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card slide-in-right" data-category="genomics">
+                    <div class="product-animation">
+                        <dotlottie-wc class="product-gif" 
+                            src="https://lottie.host/57f2941a-2987-4128-af08-e5aa447815bf/m96ZrnCx1G.lottie"
+                            speed="1" autoplay loop aria-hidden="true">
+                        </dotlottie-wc>
+                    </div>
+                    <div class="product-content">
+                        <div class="product-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Genomic Diagnostics</h3>
+                        <p>Precision diagnostic tools for personalized medicine and targeted therapy</p>
+                        <button class="product-button" aria-label="Learn more about Genomic Diagnostics">
+                            <span>Explore</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products Section End -->
+
+    <!-- Product Details Modal -->
+    <div class="product-modal" id="productModal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()" aria-label="Close product details">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i id="modal-icon" class="fas fa-pills"></i>
+                </div>
+                <h2 id="modal-title">Product Category</h2>
+                <p id="modal-description">Product description will appear here</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="Product Category Image" loading="lazy" />
+                </div>
+                <div class="modal-info">
+                    <div class="info-section">
+                        <h3 id="modal-heading1">Key Features</h3>
+                        <ul id="modal-points1"></ul>
+                    </div>
+                    <div class="info-section">
+                        <h3 id="modal-heading2">Applications</h3>
+                        <ul id="modal-points2"></ul>
+                    </div>
+                    <div class="modal-cta">
+                        <button class="cta-button">
+                            <span>Contact Our Team</span>
+                            <i class="fas fa-envelope"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Innovation Section Start -->
+    <section class="innovation-section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Innovation <span class="gradient-text">Pipeline</span></h2>
+                <p class="section-subtitle">Advancing the future of medicine through cutting-edge research</p>
+            </div>
+            
+            <div class="innovation-grid">
+                <div class="innovation-item fade-in-up">
+                    <div class="innovation-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Research & Development</h3>
+                    <p>State-of-the-art R&D facilities driving breakthrough discoveries in biopharmaceutical science.</p>
+                </div>
+                
+                <div class="innovation-item fade-in-up">
+                    <div class="innovation-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Manufacturing Excellence</h3>
+                    <p>Advanced manufacturing capabilities ensuring highest quality standards and regulatory compliance.</p>
+                </div>
+                
+                <div class="innovation-item fade-in-up">
+                    <div class="innovation-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>Rigorous quality control processes maintaining the highest safety and efficacy standards.</p>
+                </div>
+                
+                <div class="innovation-item fade-in-up">
+                    <div class="innovation-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Global Distribution</h3>
+                    <p>Worldwide distribution network ensuring timely access to life-saving treatments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Innovation Section End -->
+
+    <!-- CTA Section Start -->
+    <section class="products-cta">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2>Ready to Partner With Us?</h2>
+                <p>Discover how our innovative product portfolio can address your therapeutic needs and improve patient outcomes.</p>
+                <div class="cta-buttons">
+                    <button class="cta-primary">
+                        <span>Request Information</span>
+                        <i class="fas fa-info-circle"></i>
+                    </button>
+                    <button class="cta-secondary">
+                        <span>Schedule Meeting</span>
+                        <i class="fas fa-calendar"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-left fade-in-up">
+                <h2 class="brand">American Biosources Inc.</h2>
+                <p>Leading the future of biopharmaceutical innovation with cutting-edge research and development. 
+                Our commitment to excellence drives us to deliver quality healthcare solutions that improve lives worldwide.
+                </p>
+            </div>
+
+            <div class="footer-middle fade-in-up">
+                <h4>CONTACT US</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 80 Main Street, 5th Floor, West <br> Orange, New Jersey 07052</p>
+                <p><i class="fas fa-envelope"></i> info@ambioinc.com</p>
+                <p><i class="fas fa-phone"></i> +1-610-905-8609</p>
+                <p><i class="fas fa-phone"></i> +1-484-544-2673</p>
+            </div>
+
+            <div class="footer-right fade-in-up">
+                <h4>FOLLOW US</h4>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>© 2018-2025 American BioSources Inc.,USA®. All rights reserved.</p>
+                    </div>
+                    
+                    <div class="footer-bottom-links">
+                        <a href="./privacy-policy.html">Privacy Policy</a>
+                        <a href="./terms-conditions.html">Terms of Use</a>
+                        <a href="https://www.google.com/maps/place/80+S+Main+St+5th+Floor,+City+of+Orange,+NJ+07050,+USA/@40.7687706,-74.2235939,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3ab4a06547393:0xb4b11665ba4e955c!8m2!3d40.7687706!4d-74.2235939?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer">Site Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-copyright">
+            <a href="https://pravishree.com/" target="_blank" rel="noopener noreferrer">
+                <p>Developed by <b>Pravishree</b></p>
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Lottiefiles js -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+    
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/products.js"></script>
+</body>
+</html>

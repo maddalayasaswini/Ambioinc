@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - American Biosources Inc. | Comprehensive Biopharmaceutical Solutions</title>
+    <meta name="description" content="Explore American Biosources Inc.'s comprehensive biopharmaceutical services including technology transfer, CRO partnerships, business development, and strategic consulting.">
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/service.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <!-- <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div> -->
+
+    <!-- NavBar Section Start -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo fade-in-up">
+                <a href="./index.html">
+                    <img src="./asserts/logo.png" alt="American Biosources Inc. Logo" loading="lazy">
+                </a>
+                <p class="tagline">"Time to Market Quality Products for unmet Medical Needs"</p>
+            </div>
+
+            <ul class="nav-menu" id="navigation">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href=".//products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="./service.html" class="nav-link active">Services</a></li>
+                <li class="nav-item"><a href="./news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="./investor.html" class="nav-link">Investors</a></li>
+            </ul>
+            
+            <div class="nav-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Section End -->
+
+    <!-- Services Overview Section Start -->
+    <header class="banner-fullwidth" data-bg="./asserts/images/8.jpeg">
+        <div class="banner-bg-overlay"></div>
+        <div class="banner-text-wrapper">
+            <h1 class="banner-main-heading fade-in-up">Our Services</h1>
+            <p class="banner-subtitle fade-in-up">Comprehensive biopharmaceutical solutions tailored to your needs</p>
+        </div>
+    </header>
+    <!-- Services Overview Section End -->
+
+    <!-- Services Introduction Section Start -->
+    <section class="services-intro">
+        <div class="container">
+            <div class="intro-content fade-in-up">
+                <h2 class="section-title">Strategic <span class="gradient-text">Solutions</span></h2>
+                <p class="intro-description">
+                    American Biosources Inc. offers a comprehensive suite of strategic consulting and partnership services 
+                    designed to accelerate your biopharmaceutical initiatives. Our expert team provides end-to-end support 
+                    from technology transfer to market entry, ensuring your innovations reach patients faster and more efficiently.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Services Introduction Section End -->
+   
+    <!-- Interactive Services Section Start -->
+    <section class="services-interactive">
+        <div class="services-background">
+            <canvas id="dnaCanvas" aria-hidden="true"></canvas>
+            <div class="dna-overlay"></div>
+        </div>
+        
+        <div class="services-container">
+            <div class="services-header fade-in-up">
+                <h2 class="section-title">Interactive <span class="gradient-text">Service Explorer</span></h2>
+                <p class="section-subtitle">Click on any service below to learn more about our comprehensive offerings</p>
+            </div>
+            
+            <div id="buttons-container" class="services-buttons"></div>
+        </div>
+
+        <!-- Service Details Popup -->
+        <div id="popup-box" class="service-popup" role="dialog" aria-labelledby="popup-title" aria-hidden="true">
+            <div class="popup-content">
+                <button class="close-btn" aria-label="Close service details">&times;</button>
+                <div class="popup-header">
+                    <div class="popup-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 id="popup-title">Service Details</h3>
+                </div>
+                <div class="popup-body">
+                    <p id="popup-text">Service information will appear here.</p>
+                    <div class="popup-features">
+                        <h4>Key Features:</h4>
+                        <ul id="popup-features-list">
+                            <li>Feature details will be populated here</li>
+                        </ul>
+                    </div>
+                    <div class="popup-cta">
+                        <button class="cta-button">
+                            <span>Learn More</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Interactive Services Section End -->
+
+    <!-- Services Grid Section Start -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Our <span class="gradient-text">Expertise</span></h2>
+                <p class="section-subtitle">Comprehensive services across the biopharmaceutical value chain</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card slide-in-left">
+                    <div class="service-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Technology Transfer</h3>
+                    <p>Seamless technology transfer partnerships to accelerate innovation and bring cutting-edge solutions to market.</p>
+                    <ul class="service-features">
+                        <li>IP Assessment & Valuation</li>
+                        <li>Regulatory Compliance</li>
+                        <li>Process Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card slide-in-left">
+                    <div class="service-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>CRO & CDMO Partnerships</h3>
+                    <p>Strategic partnerships with leading Contract Research and Manufacturing Organizations worldwide.</p>
+                    <ul class="service-features">
+                        <li>Vendor Selection & Management</li>
+                        <li>Quality Assurance</li>
+                        <li>Cost Optimization</li>
+                    </ul>
+                </div>
+
+                <div class="service-card slide-in-left">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Business Development</h3>
+                    <p>Comprehensive business development strategies to maximize market opportunities and growth potential.</p>
+                    <ul class="service-features">
+                        <li>Market Analysis</li>
+                        <li>Strategic Planning</li>
+                        <li>Partnership Development</li>
+                    </ul>
+                </div>
+
+                <div class="service-card slide-in-right">
+                    <div class="service-icon">
+                        <i class="fas fa-digital-tachograph"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p>Advanced digital marketing strategies tailored for the biopharmaceutical industry.</p>
+                    <ul class="service-features">
+                        <li>Brand Strategy</li>
+                        <li>Digital Campaigns</li>
+                        <li>Market Penetration</li>
+                    </ul>
+                </div>
+
+                <div class="service-card slide-in-right">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Licensing Solutions</h3>
+                    <p>Expert guidance on in-licensing and out-licensing opportunities to maximize asset value.</p>
+                    <ul class="service-features">
+                        <li>License Negotiations</li>
+                        <li>Due Diligence</li>
+                        <li>Contract Management</li>
+                    </ul>
+                </div>
+
+                <div class="service-card slide-in-right">
+                    <div class="service-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3>Financial Strategy</h3>
+                    <p>Comprehensive financial planning and strategy development for sustainable growth.</p>
+                    <ul class="service-features">
+                        <li>Financial Modeling</li>
+                        <li>Investment Strategy</li>
+                        <li>Risk Management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Grid Section End -->
+
+    <!-- Why Choose Us Section Start -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Why Choose <span class="gradient-text">Our Services</span></h2>
+                <p class="section-subtitle">Proven expertise and commitment to excellence in biopharmaceutical consulting</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item fade-in-up">
+                    <div class="benefit-number">01</div>
+                    <h3>Expert Team</h3>
+                    <p>Our team consists of industry veterans with decades of experience in biopharmaceutical development and commercialization.</p>
+                </div>
+                
+                <div class="benefit-item fade-in-up">
+                    <div class="benefit-number">02</div>
+                    <h3>Proven Track Record</h3>
+                    <p>Successfully delivered over 100+ projects with measurable results and client satisfaction.</p>
+                </div>
+                
+                <div class="benefit-item fade-in-up">
+                    <div class="benefit-number">03</div>
+                    <h3>Global Network</h3>
+                    <p>Extensive network of partners and collaborators across 25+ countries worldwide.</p>
+                </div>
+                
+                <div class="benefit-item fade-in-up">
+                    <div class="benefit-number">04</div>
+                    <h3>Tailored Solutions</h3>
+                    <p>Customized strategies and solutions designed specifically for your unique business needs and objectives.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section End -->
+
+    <!-- CTA Section Start -->
+    <section class="services-cta">
+        <div class="container">
+            <div class="cta-content fade-in-up">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let our expert team help you navigate the complex biopharmaceutical landscape and achieve your strategic objectives.</p>
+                <div class="cta-buttons">
+                    <button class="cta-primary">
+                        <span>Get Started Today</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="cta-secondary">
+                        <span>Schedule Consultation</span>
+                        <i class="fas fa-calendar"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-left fade-in-up">
+                <h2 class="brand">American Biosources Inc.</h2>
+                <p>Leading the future of biopharmaceutical innovation with cutting-edge research and development. 
+                Our commitment to excellence drives us to deliver quality healthcare solutions that improve lives worldwide.
+                </p>
+            </div>
+
+            <div class="footer-middle fade-in-up">
+                <h4>CONTACT US</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 80 Main Street, 5th Floor, West <br> Orange, New Jersey 07052</p>
+                <p><i class="fas fa-envelope"></i> info@ambioinc.com</p>
+                <p><i class="fas fa-phone"></i> +1-610-905-8609</p>
+                <p><i class="fas fa-phone"></i> +1-484-544-2673</p>
+            </div>
+
+            <div class="footer-right fade-in-up">
+                <h4>FOLLOW US</h4>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>© 2018-2025 American BioSources Inc.,USA®. All rights reserved.</p>
+                    </div>
+                    
+                    <div class="footer-bottom-links">
+                        <a href="./privacy-policy.html">Privacy Policy</a>
+                        <a href="./terms-conditions.html">Terms of Use</a>
+                        <a href="https://www.google.com/maps/place/80+S+Main+St+5th+Floor,+City+of+Orange,+NJ+07050,+USA/@40.7687706,-74.2235939,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3ab4a06547393:0xb4b11665ba4e955c!8m2!3d40.7687706!4d-74.2235939?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer">Site Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-copyright">
+            <a href="https://pravishree.com/" target="_blank" rel="noopener noreferrer">
+                <p>Developed by <b>Pravishree</b></p>
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="./js/service.js"></script>
+</body>
+</html>

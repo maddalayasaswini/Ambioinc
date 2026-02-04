@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Biosources Inc. - Innovating Healthcare Today</title>
+    <meta name="description" content="American Biosources Inc. - Leading biopharmaceutical company providing innovative healthcare solutions including pharmaceuticals, vaccines, biologics, and genomic diagnostics.">
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Box Icons Link -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+<body>
+    
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+    
+    <!-- NavBar Section Start -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo fade-in-up">
+                <a href="./index.html">
+                    <img src="./asserts/logo.png" alt="American Biosources Inc. Logo" loading="lazy">
+                </a>
+                <p class="tagline">"Time to Market Quality Products for unmet Medical Needs"</p>
+            </div>
+
+            <ul class="nav-menu" id="navigation">
+                <li class="nav-item"><a href="./index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="./products.html" class="nav-link">Products</a></li>
+                <li class="nav-item"><a href="./service.html" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="./news.html" class="nav-link">News</a></li>
+                <li class="nav-item"><a href="./investor.html" class="nav-link">Investors</a></li>
+            </ul>
+
+            <div class="nav-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- NavBar Section End -->
+
+    <!-- Banner Container Section Start -->
+    <header class="biopharma-banner" data-bg="./asserts/images/5.jpg" style="background-repeat: no-repeat; background-size: cover; background-position: center; ">
+        <div class="banner-content">
+            <div class="headline fade-in-up">
+                <h1>Innovating Healthcare Today</h1>
+                <p class="tagline">Biotech Solutions for a Healthier Tomorrow</p>
+            </div>
+        </div>
+        <!-- Animated Background -->
+        <canvas id="dna-animation"></canvas>
+    </header>
+    <!-- Banner Container Section End -->
+
+    <!-- New Slider Section Start -->
+    <section class="carousel card-row"> 
+        <div class="section-header fade-in-up">
+            <h3 class="section-title">Our <span class="gradient-text">Services</span></h3>
+            <p class="section-subtitle">Comprehensive biopharmaceutical solutions tailored to meet diverse healthcare needs</p>
+        </div>
+        <div class="carousel-item card slide-in-left"><button>Pharmaceuticals</button></div>
+        <div class="carousel-item card slide-in-left"><button>Vaccines</button></div>
+        <div class="carousel-item card slide-in-left"><button>Biologics</button></div>
+        <div class="carousel-item card slide-in-left"><button>Biosimilars</button></div>
+        <div class="carousel-item card slide-in-left"><button>Genomic Diagnostics</button></div>
+    </section>
+    <!-- New Slider Section End -->
+
+    <!-- World Map Section Start -->
+    <div class="map">
+        <div class="section-header fade-in-up">
+            <h3 class="section-title">Our Reach<span class="gradient-text"> is Global</span></h3>
+            <p class="section-subtitle">Serving healthcare markets worldwide with innovative solutions</p>
+        </div>
+        <div class="map-container zoom-in">
+            <img src="./asserts/images/Map Location.jpg" alt="Global reach map showing American Biosources Inc. locations worldwide" loading="lazy" class="lazy-image"/>
+        </div>
+    </div>
+    <!-- World Map Section End -->
+        
+    <!-- Contact Section Start -->     
+    <section class="contact-section">
+        <div class="left-form slide-in-left">
+            <h2>Get in Touch</h2>
+            <p class="form-description">Ready to discuss your biopharmaceutical needs? Contact our expert team today.</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email ID" required />
+                </div>
+                <div class="form-group">
+                    <select id="serviceDropdown" title="services" required>
+                        <option value="">Select a Service</option>
+                        <option value="Pharmaceuticals">Pharmaceuticals</option>
+                        <option value="Vaccines">Vaccines</option>
+                        <option value="Biologics">Biologics</option>
+                        <option value="Biosimilars">Biosimilars</option>
+                        <option value="Genomic">Genomic Diagnostics</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="productDropdown" title="products" required>
+                        <option value="">Select a Product</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>Submit</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+
+        <div class="right-info slide-in-right">
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <h3>Contact Us</h3>
+                <p>+1-610-905-8609</p>
+                <p>+1-484-544-2673</p>
+                <p>Fax: +1-(610)-365-8795</p>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Address</h3>
+                <p>80 Main Street, 5th Floor</p>
+                <p>West Orange, New Jersey, 07052</p>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>info@ambioinc.com</p>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-left fade-in-up">
+                <h2 class="brand">American Biosources Inc.</h2>
+                <p>Leading the future of biopharmaceutical innovation with cutting-edge research and development. 
+                Our commitment to excellence drives us to deliver quality healthcare solutions that improve lives worldwide.
+                </p>
+            </div>
+
+            <div class="footer-middle fade-in-up">
+                <h4>CONTACT US</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 80 Main Street, 5th Floor, West <br> Orange, New Jersey 07052</p>
+                <p><i class="fas fa-envelope"></i> info@ambioinc.com</p>
+                <p><i class="fas fa-phone"></i> +1-610-905-8609</p>
+                <p><i class="fas fa-phone"></i> +1-484-544-2673</p>
+            </div>
+
+            <div class="footer-right fade-in-up">
+                <h4>FOLLOW US</h4>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Email"><i class="fa fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>© 2018-2025 American BioSources Inc.,USA®. All rights reserved.</p>
+                    </div>
+                    
+                    <div class="footer-bottom-links">
+                        <a href="./privacy-policy.html">Privacy Policy</a>
+                        <a href="./terms-conditions.html">Terms of Use</a>
+                        <a href="https://www.google.com/maps/place/80+S+Main+St+5th+Floor,+City+of+Orange,+NJ+07050,+USA/@40.7687706,-74.2235939,17z/data=!3m1!4b1!4m5!3m4!1s0x89c3ab4a06547393:0xb4b11665ba4e955c!8m2!3d40.7687706!4d-74.2235939?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
+                            target="_blank" rel="noopener noreferrer">Site Map
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="final-copyright">
+            <a href="https://pravishree.com/" target="_blank" rel="noopener noreferrer">
+                <p>Developed by <b>Pravishree</b></p>
+            </a>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    
+    <!-- Banner Slider Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.6.2/dist/dotlottie-wc.js" type="module"></script>
+
+    <!-- Script Sheet -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

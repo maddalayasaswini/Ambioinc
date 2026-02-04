@@ -1,0 +1,19 @@
+28-07-2025: Project Assigned
+
+01-08-2025: 1st Draft Ready
+
+02-08-2025:
+Map size is set in all devices  - Yatheswar
+Services Page is added          - Yassasswini
+Footer is modified              - Yassasswini
+
+Footer set in Service Page      - Yatheswar
+Set same Footer in all Pages    - Yatheswar
+Investor Page is set correctly  - Yatheswar
+
+04-08-205:
+Products Page and Responsiveness - Yassasswini
+
+05-08-2025:
+Slider set in Home Page          - Yatheswar
+News Page                        - Yatheswar
